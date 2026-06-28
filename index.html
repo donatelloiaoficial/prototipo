@@ -411,64 +411,10 @@ body{min-height:100vh}
       <button class="nav-btn" id="nav-marketplace" onclick="nav('marketplace')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Marketplace</button>
       <button class="nav-btn" id="nav-copilot" onclick="nav('copilot')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/><path d="M9 6h6"/></svg>Copiloto<span class="nav-badge" style="background:var(--cyan)">NOVO</span></button>
       <button class="nav-btn" id="nav-settings" onclick="nav('settings')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Configurações</button>
-      <button class="nav-btn" id="nav-overview" onclick="nav('overview')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Resumo Geral<span class="nav-badge">DEMO</span></button>
     </nav>
 
     <!-- CONTENT -->
     <main class="content" id="content">
-      <!-- ════════ OVERVIEW / RESUMO GERAL VIEW ════════ -->
-<div class="view" id="view-overview">
-  <h1 class="page-h1">Resumo Geral</h1>
-  <p class="page-sub">Por que a Donatello Pipeline3D existe — e por que ela vence.</p>
-
-  <div class="nota">
-    <div class="nota-l">⚠ Disponível apenas na versão demonstração</div>
-    <div class="nota-t">Esta seção <strong>Resumo Geral</strong> e todas as explicações destacadas em <strong style="color:var(--amber)">amarelo</strong> ao longo das telas existem apenas nesta versão de demonstração para investidores e avaliadores. Na versão de produção usada pelos artistas, elas não aparecem — a interface fica limpa e focada no trabalho.</div>
-  </div>
-
-  <div class="ov-hero">
-    <div class="ov-hero-tag">O problema que resolvemos</div>
-    <h2 class="ov-hero-h">60–70% do tempo de um artista 3D é desperdiçado em trabalho técnico manual.</h2>
-    <p class="ov-hero-p">Retopologia, UV unwrap e texturização consomem a maior parte do projeto — e nenhuma dessas tarefas é, de fato, criativa. <strong style="color:#34d399">Agora a Donatello.IA cuida disso em minutos.</strong></p>
-  </div>
-
-  <div class="ov-diff">
-    <div class="ov-diff-l">✦ O diferencial central da solução</div>
-    <p class="ov-diff-t">A IA <strong>não substitui o artista</strong> — ela elimina o trabalho que nunca deveria ser dele. Lucas cria; a Donatello.IA cuida da burocracia técnica. Esse <strong style="color:#c4b5fd">"copiloto criativo"</strong> não existe em nenhum concorrente atual.</p>
-  </div>
-
-  <h3 class="ov-sec-h">Com vs. sem Donatello Pipeline3D</h3>
-  <div class="cmp">
-    <div class="cmp-col cmp-bad">
-      <div class="cmp-h">✕ Sem Donatello Pipeline3D</div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#f87171"></div><div><div class="t">Retopologia: 2–3 dias</div><div class="s">Refeita manualmente, vértice por vértice</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#f87171"></div><div><div class="t">Texturização: 8–16 horas</div><div class="s">Cada material pintado do zero</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#f87171"></div><div><div class="t">Ferramentas desconectadas</div><div class="s">Exportar/importar entre 5 softwares</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#f87171"></div><div><div class="t">Artista preso na técnica</div><div class="s">Pouco tempo para o que importa: criar</div></div></div>
-    </div>
-    <div class="cmp-col cmp-good">
-      <div class="cmp-h">✓ Com Donatello Pipeline3D</div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#34d399"></div><div><div class="t">Retopologia: 4–8 minutos</div><div class="s">Automática via IA — economia de 98%</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#34d399"></div><div><div class="t">Texturização: 30–60 minutos</div><div class="s">IA gera base PBR; artista só refina</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#34d399"></div><div><div class="t">Pipeline unificado</div><div class="s">Blender, ZBrush, Substance e Unreal num só fluxo</div></div></div>
-      <div class="cmp-item"><div class="cmp-dot" style="background:#34d399"></div><div><div class="t">Artista 100% no criativo</div><div class="s">A IA assume toda a burocracia técnica</div></div></div>
-    </div>
-  </div>
-
-  <div class="stat-grid" style="margin-top:18px">
-    <div class="stat"><div class="stat-l">Economia de tempo</div><div class="stat-v" style="color:#34d399">~65%</div><div class="stat-d">por personagem entregue</div></div>
-    <div class="stat"><div class="stat-l">Retopologia</div><div class="stat-v" style="color:#34d399">98%</div><div class="stat-d">mais rápida (dias → minutos)</div></div>
-    <div class="stat"><div class="stat-l">Lock-in</div><div class="stat-v" style="color:#c4b5fd">Alto</div><div class="stat-d">biblioteca de assets cresce com o uso</div></div>
-    <div class="stat"><div class="stat-l">Receita extra</div><div class="stat-v" style="color:var(--amber)">30%</div><div class="stat-d">revenue share do Marketplace</div></div>
-  </div>
-
-  <div class="ov-cta">
-    <div>
-      <div class="ov-cta-h">Um copiloto criativo que nenhum concorrente tem</div>
-      <p class="ov-cta-p">Assinatura recorrente + Marketplace + lock-in de biblioteca + versão em nuvem com acesso remoto (veja a aba <strong>Copiloto</strong>). Múltiplas fontes de receita sobre a mesma base de usuários.</p>
-    </div>
-  </div>
-</div>
 
       <!-- ════════ PROJECTS VIEW ════════ -->
 <div class="view active" id="view-projects">
@@ -476,11 +422,6 @@ body{min-height:100vh}
     <h1 class="page-h1">Editor de Fluxo de Trabalho</h1>
     <p class="page-sub">Projeto: Personagem Sci-Fi — Comandante Kyra</p>
     <p class="page-sub2">Para: NovaCraft Games · Última modificação: há 2 horas</p>
-
-    <div class="nota">
-      <div class="nota-l">Para investidores — o que é este pipeline?</div>
-      <div class="nota-t">Cada cartão abaixo é uma etapa que todo artista 3D precisa percorrer para criar um personagem. As etapas <strong style="color:#f87171">técnicas</strong> (retopologia, UV, texturização) consomem 60–70% do tempo — e é exatamente isso que a Donatello.IA automatiza. Clique em qualquer etapa para ver o ganho de tempo.</div>
-    </div>
 
     <div class="pipe-wrap">
       <div class="pipe-row" id="pipeRow"></div>
@@ -510,11 +451,6 @@ body{min-height:100vh}
   <h1 class="page-h1">Biblioteca de Assets</h1>
   <p class="page-sub">Modelos, texturas e materiais reutilizáveis acumulados em projetos.</p>
 
-  <div class="nota">
-    <div class="nota-l">Por que isso importa para investidores</div>
-    <div class="nota-t">A biblioteca cria um efeito de lock-in: quanto mais o artista usa a plataforma, mais ativos acumula — e mais difícil fica migrar para um concorrente. Isso eleva o LTV e reduz o churn.</div>
-  </div>
-
   <div class="lib-toolbar" style="margin-top:18px">
     <div class="search-box">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -532,11 +468,6 @@ body{min-height:100vh}
   <h1 class="page-h1">Marketplace de Plugins</h1>
   <p class="page-sub">Expanda seu pipeline com extensões da comunidade.</p>
 
-  <div class="nota">
-    <div class="nota-l">Modelo de receita adicional — para investidores</div>
-    <div class="nota-t">Além da assinatura, o Marketplace gera receita com Revenue Share 70/30 (a plataforma retém 30% de cada transação). Mais plugins disponíveis = mais valor percebido e maior barreira de saída.</div>
-  </div>
-
   <div class="mk-banner">
     <div class="tag">✦ Destaque da semana</div>
     <h3>AI Retopo Pro v3 — Retopologia automática em 1 clique</h3>
@@ -551,11 +482,6 @@ body{min-height:100vh}
 <div class="view" id="view-settings">
   <h1 class="page-h1">Configurações</h1>
   <p class="page-sub">Integrações, automações de IA e preferências da conta.</p>
-
-  <div class="nota">
-    <div class="nota-l">Para investidores — flexibilidade como vantagem competitiva</div>
-    <div class="nota-t">Esta tela mostra o <strong>poder e a flexibilidade</strong> da plataforma: ela se acopla aos softwares que o estúdio já usa (Blender, ZBrush, Substance, Maya) em vez de obrigar a troca de ferramentas — o que derruba a barreira de adoção. Cada automação de IA é um <strong>toggle</strong>: o artista decide o quanto delega à IA, ganhando confiança gradualmente. Esse controle granular é o que transforma um teste em assinatura recorrente.</div>
-  </div>
 
   <div class="set-section" style="margin-top:18px">
     <div class="set-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Integrações de Software</h3></div>
@@ -585,11 +511,6 @@ body{min-height:100vh}
 <div class="view" id="view-copilot">
   <h1 class="page-h1">Modo Copiloto <span style="font-size:13px;vertical-align:middle;background:var(--cyan);color:#06222a;padding:3px 9px;border-radius:20px;font-weight:700">NOVO</span></h1>
   <p class="page-sub">Seu pipeline rodando em nuvem ou máquina dedicada — você comanda do celular, de qualquer lugar.</p>
-
-  <div class="nota">
-    <div class="nota-l">Para investidores — por que isto destrava um novo mercado</div>
-    <div class="nota-t">Aplicações 3D pesadas exigem GPUs potentes e não rodam bem em celular. A Donatello.IA resolve isso separando <strong>processamento</strong> de <strong>comando</strong>: a renderização roda numa máquina dedicada ou na <strong>nuvem</strong>, e o celular vira um <strong>cockpit remoto</strong>. Isso abre uma versão <strong>SaaS em nuvem</strong> (sem hardware do cliente), aumenta o tempo de máquina útil e cria mais um fluxo de receita recorrente.</div>
-  </div>
 
   <div class="cp-grid">
     <div class="cp-card">
